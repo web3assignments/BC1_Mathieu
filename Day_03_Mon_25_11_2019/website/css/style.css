@@ -1,0 +1,28 @@
+body {
+  background: url('../287977.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF
+}
+
+.box {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    opacity: 0.5;
+    background: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 724px;
+    height: 150px;
+}
+
+h1 {
+  position:static;
+  text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ethereum information</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <h1>Ethereum information website</h1>
+  <br>
+
+  Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
+
+  <div class="box">
+    <pre id="log" style="width:100%;height:200px"></pre>
+  </div>
+
+  <script>
+    function log(logstr) {
+      document.getElementById("log").innerHTML += logstr + "\n";
+    }
+
+    async function getBlockNumber() {
+      const request = JSON.stringify({
+        "jsonrpc": "2.0",
+        "method": "eth_blockNumber",
+        "params": [],
+        "id": 67
+      });
+      log(`Sending ${request}`);
+      const rawResponse = await fetch('https://mainnet.infura.io', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: request
+      });
+      const content = await rawResponse.json();
+      log(`Received ${JSON.stringify(content)}`);
+      log(`Current blocknumber = ${parseInt(content.result)}`);
+    }
+
+    async function getLatestTransaction(){
+      const request = JSON.stringify({
+        "jsonrpc": "2.0",
+        "method": "eth_getTransactionByBlockNumberAndIndex",
+        "params": ["latest", "0x0"],
+        "id": 67
+      });
+      log(`Sending ${request}`);
+
+      const rawResponse = await fetch('https://mainnet.infura.io', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: request
+      });
+      const content = await rawResponse.json();
+      log(`Received ${JSON.stringify(content)}`);
+      log(`transaction info = ${JSON.stringify(content.result)}`);
+    }
+
+    async function clientVersion() {
+      const request = JSON.stringify({
+        "jsonrpc": "2.0",
+        "method": "web3_clientVersion",
+        "params": [],
+        "id": 67
+      });
+      log(`Sending ${request}`);
+
+      const rawResponse = await fetch('https://mainnet.infura.io', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: request
+      });
+      const content = await rawResponse.json();
+      log(`Received ${JSON.stringify(content)}`);
+    }
+
+    getBlockNumber();
+    //clientVersion();
+    getLatestTransaction();
+  </script>
+</body>
+<html>
