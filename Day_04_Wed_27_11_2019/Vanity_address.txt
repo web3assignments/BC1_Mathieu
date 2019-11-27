@@ -1,0 +1,5 @@
+Ik heb de tool profinity (https://github.com/johguse/profanity)
+gebruikt om met behulp van mijn gpu een key te vinden die begon met DEADBEEF
+
+Public Key: 0xDeADBeeF730617Dc73b5EcA456e9088dc131184A
+Private key: 474CFAD464F778D01017659137E4BDB014E7611AE4EB681424013D8EABB1967
