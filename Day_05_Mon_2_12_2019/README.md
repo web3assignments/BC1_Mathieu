@@ -1,2 +1,2 @@
 ### Day_05_Mon_2_12_2019 
-Place the assignments in this subdirectory   
+Website available at https://web3assignments.github.io/BC1_Mathieu/Day_05_Mon_2_12_2019/website/index.html
