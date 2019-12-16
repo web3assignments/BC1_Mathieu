@@ -1,0 +1,4 @@
+ERC-20 Contract address:  0x9B98566E3d984BE2080B5667C469CC8a3F254570
+ERC-721 Contract address: 0x5f1d0ca3b06488109c9402bb41f6394cd2454eed
+
+Opensea: https://rinkeby.opensea.io/assets/0x5f1d0ca3b06488109c9402bb41f6394cd2454eed/10#bids
