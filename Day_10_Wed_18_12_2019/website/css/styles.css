@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(167, 167, 167);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px;
+}
+
+.ipfslogo {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+.ipfs-container {
+  padding-top: 80px;
+}
+
+pre {
+  font-family: 'Montserrat', monospace;
+  font-size: .9em;
+}
+
+.upload {
+  float: left;
+  text-align: left;
+  margin-left: 18%;
+}
+
+.download {
+
+  text-align: left;
+  margin-left: 52%;
+}

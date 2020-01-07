@@ -1,0 +1,1 @@
+IPFS logo: https://github.com/ipfs/logo/blob/master/LICENSE

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://unpkg.com/ipfs-http-client/dist/index.js"></script>
+  <script src="https://bundle.run/buffer"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IPFS upload and view</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="ipfs-container">
+      <img class="ipfslogo" src="Images/img1.png" alt="IPFS_picture" />
+      <h1>Upload and Retrieve files from IPFS</h1>
+
+      <div class="upload">
+        <form enctype="multipart/form-data">
+          <input type="file" name="files[]" multiple />
+          <input type="submit" value="Upload File" name="submit" />
+        </form>
+        <div class="upload-info">
+          <pre class="upload-info-js" id="upload-info-fromjs"></pre>
+        </div>
+      </div>
+      <div class="download">
+        <form method="get" id="downloadForm">
+          <input type="text" name="Hash" id="hashInput" />
+          <input type="submit" value="Download" name="download" />
+        </form>
+
+        <div class="download-info">
+          <pre class="download-info-js" id="download-info-fromjs"></pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="Script.js"></script>
+<script src="Upload.js"></script>
+<script src="Download.js"></script>
+
+
+</html>
