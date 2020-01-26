@@ -1,0 +1,19 @@
+Key Management Recommendation
+
+I recommend to use a password manager for the storage and creation of passwords.
+A password manager creates more secure passwords than most humans.
+The master password should be a very strong password.
+
+When a (private or business) user has a big amount of tokens in their wallet they should consider buying a hardware wallet (Ledger nano for example).
+This stores the private key encrypted on a small offline device.
+
+Private & Business Users:
+I recommend to keep a physical copy of the 24 recovery words (written down on paper) and store it safely (in a safe for example)
+This way you can always restore your wallet and you won't lose any tokens.
+
+Business Users:
+Businesses are recommended to use a multisigniture wallet to store tokens. This wallet requires multiple addresses to verify a transaction.
+Most fraud can be prevented that way.
+
+Whenever you want to share your wallet with another person I also recommend a multisig wallet.
+Transactions can be tracked per signature.
