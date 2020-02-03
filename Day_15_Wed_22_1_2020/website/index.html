@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web3 in browser!</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="web3connect-browserify.js"></script>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="content-container">
+      <div class="container">
+        <header>
+          <h1>Hi all</h1>
+          <nav>
+            <ul class="show-desktop" id="nav">
+              <li><a href="#">home</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <img src="Images/img1.png" alt="Ethereum" class="ethlogo">
+          <h2>Ethereum web3 staff manager portal</h2>
+          <p class="ethtext">A place to add staff members to the monthly tip payout</p>
+          <br>
+          <div class="createMember">
+            <form id="createMemberForm" enctype="multipart/form-data">
+              <input id="createAddress" type="text" value="address" name="address" multiple />
+              <input id="createName" type="text" value="name" name="name" multiple />
+              <input id="createLevel" type="text" value="level" name="level" multiple />
+              <input type="submit" value="create member" name="submit" />
+            </form>
+
+            <form id="checkForm">
+              <p class="ethtext">Check name and address</p>
+              <input id="checkAddress" type="text" name="address"/>
+              <input type="submit" value="Lookup member" name="submit"/>
+            </form>
+            <br>
+            <button id="button1" onclick="f()"> Tip</button>
+            <button id="button1" onclick="y()"> Transfer</button>
+        </section>
+      </div>
+    </div>
+    <div class="info-container">
+      <pre id="js-output"></pre>
+    </div>
+  </div>
+
+  </div>
+  <script src="contract-info.js"></script>
+  <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(167, 167, 167);
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, ethtext {
+  font-size: .9em;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightblue;
+  /*display: flex;*/
+  display: none;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.ethlogo {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.info-container {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  font-size: .9em;
+  text-align: left;
+  margin: 0% 15% 5% 15%;
+
+  padding: 10px 24px 10px 24px;
+}
+
+pre {
+  font-family: 'Montserrat', monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav ul {
+  position: inherit;
+  width: auto;
+  background: none;
+  height: auto;
+  display: flex;
+}
+
+nav ul li {
+  float: left;
+  margin-top: 5%;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 1em;
+}
+
+button {
+  color: white;
+  font-size: 1.2em;
+  height: 3em;
+  width: 124px;
+  padding: 1em;
+  margin: 1em auto;
+  background-color: #334d4d;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
